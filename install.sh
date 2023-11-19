@@ -15,9 +15,7 @@
 
 # download openpoints
 git config --global --unset core.sshCommand
-git submodule add https://github.com/guochengqian/openpoints.git
-git submodule update --init --recursive
-git submodule update --remote --merge # update to the latest version
+git clone https://github.com/guochengqian/openpoints.git openpoints
 
 # please always double check installation for pytorch and torch-scatter from the official documentation
 pip3 install pytorch torchvision cudatoolkit
