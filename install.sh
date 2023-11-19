@@ -14,6 +14,7 @@
 # module load gcc/7.5.0
 
 # download openpoints
+git config --global --unset core.sshCommand
 git submodule add https://github.com/guochengqian/openpoints.git
 git submodule update --init --recursive
 git submodule update --remote --merge # update to the latest version
