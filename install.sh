@@ -19,7 +19,7 @@ git submodule update --init --recursive
 git submodule update --remote --merge # update to the latest version
 
 # please always double check installation for pytorch and torch-scatter from the official documentation
-pip3 install pytorch=1.10.1 torchvision cudatoolkit=11.3
+pip3 install pytorch==1.10.1 torchvision cudatoolkit==11.3
 pip3 install torch-scatter -f https://data.pyg.org/whl/torch-1.10.1+cu113.html
 
 pip3 install -r requirements.txt
