@@ -14,7 +14,7 @@
 # module load gcc/7.5.0
 
 # download openpoints
-# git submodule add git@github.com:guochengqian/openpoints.git
+git submodule add git@github.com:guochengqian/openpoints.git
 git submodule update --init --recursive
 git submodule update --remote --merge # update to the latest version
 
@@ -27,7 +27,7 @@ pip3 install -r requirements.txt
 # install cpp extensions, the pointnet++ library
 cd openpoints/cpp/pointnet2_batch
 python3 setup.py install
-cd ../
+cd ..
 
 # grid_subsampling library. necessary only if interested in S3DIS_sphere
 cd subsampling
