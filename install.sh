@@ -18,7 +18,7 @@ git config --global --unset core.sshCommand
 git clone https://github.com/guochengqian/openpoints.git openpoints
 
 # please always double check installation for pytorch and torch-scatter from the official documentation
-pip3 install pytorch torchvision cudatoolkit
+pip3 install pytorch torchvision cuda-python
 pip3 install torch-scatter -f https://data.pyg.org/whl/torch-1.10.1+cu113.html
 
 pip3 install -r requirements.txt
